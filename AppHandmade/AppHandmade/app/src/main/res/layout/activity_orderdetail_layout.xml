@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orderdetail_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/yellow1"
+        >
+        <include
+            android:id="@+id/include"
+            layout="@layout/head_layout2" />
+        <LinearLayout
+            android:id="@+id/layoutProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="27dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="72dp">
+            <!-- Ảnh sản phẩm -->
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="Hình ảnh sản phẩm"
+                android:src="@drawable/camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutProductInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="28dp"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutProductImage">
+
+            <!-- Tên sản phẩm + Giá hàng và Icon -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sản phẩm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Mô tả sản phẩm -->
+            <TextView
+                android:id="@+id/tvProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mô tả sản phẩm"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- Trạng thái sản phẩm -->
+            <TextView
+                android:id="@+id/tvProductStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Trạng thái: Còn hàng"
+                android:textColor="#07990D"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/price"
+                android:text=" Giá: 1.000.000 VND"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSellerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutProductInfo">
+
+            <!-- Avatar người bán -->
+            <ImageView
+                android:id="@+id/imgSellerAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Avatar người bán"
+                android:src="@drawable/cat" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Tên người bán -->
+                <TextView
+                    android:id="@+id/tvSellerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Người bán: John Doe"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Nút liên hệ người bán -->
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnContactSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/orange"
+                    android:text="Liên hệ người bán"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/favourite"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom">
+
+                    </ImageButton>
+                    <!-- Phản hồi -->
+                    <TextView
+                        android:id="@+id/tvSellerFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="Phản hồi: 4.5/5"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutSellerInfo">
+
+            <!-- Nút thêm vào giỏ hàng -->
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:background="@drawable/nut_hong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Thêm vào giỏ hàng"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+
+                />
+
+            <!-- Nút mua ngay -->
+            <Button
+                android:id="@+id/btnBuyNow"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nut_hong"
+                android:text="Mua ngay"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

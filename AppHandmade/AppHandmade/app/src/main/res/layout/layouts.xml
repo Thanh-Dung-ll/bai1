@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-9dp"
+        app:srcCompat="@drawable/imageforhomeheader"
+        />
+
+    <ImageButton
+        android:id="@+id/igmbuttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:importantForAccessibility="no"
+        android:padding="19dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/out"></ImageButton>
+
+</RelativeLayout>

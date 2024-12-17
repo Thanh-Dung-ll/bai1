@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.home.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/orangebackground"
+    >
+        <LinearLayout
+            android:id="@+id/gridhead"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+          >
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imageforhomeheader"
+                android:contentDescription="TODO"
+                tools:ignore="HardcodedText">
+
+                <ImageButton
+                    android:id="@+id/igmbuttonMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@android:color/transparent"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    android:src="@drawable/quaylai"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/srview"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|center"
+                    android:background="@drawable/khungbaosearchview"
+                    android:backgroundTint="@color/white"
+                    android:hint="Tìm kiếm"
+                    tools:ignore="RtlHardcoded">
+
+                </androidx.appcompat.widget.SearchView>
+
+                <ImageButton
+                    android:id="@+id/igmbuttonGro"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="timkirm"
+                    android:src="@drawable/gro"
+                    tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/igmbuttonaccoun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/danger"
+                    tools:ignore="RtlHardcoded,TouchTargetSizeCheck"></ImageButton>
+            </Toolbar>
+        </LinearLayout>
+
+</RelativeLayout>

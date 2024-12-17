@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sell_layout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow1"
+        android:orientation="vertical">
+
+        <!-- Thanh tiêu đề (AppBar) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/imageforhomeheader">
+
+            <!-- Nút Quay lại -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/quaylai" />
+
+            <!-- Tiêu đề Đăng bán -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đăng bán"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/pink1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:src="@drawable/img_1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Tên món hàng:\n Nhập tên hàng:"
+            android:maxLength="120"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@color/pink1"
+            android:inputType="text" />
+
+        <!-- Trường nhập mã số hàng -->
+        <EditText
+            android:id="@+id/etProductCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Mô tả hàng:\n Nhập mã hàng:"
+            android:maxLength="5000"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@color/pink1"
+            android:inputType="text" />
+
+        <!-- Danh mục -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@color/pink1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/danhmuc"
+                android:background="@android:color/transparent"
+                android:id="@+id/danhmuc"
+                android:padding="10dp"
+                android:contentDescription="nút danh mục"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Danh mục"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Phân loại hàng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@color/pink1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phanloaihang"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="nút phân loại"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Phân loại hàng"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Giá -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@color/pink1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gia"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Giá"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Trạng thái -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@color/pink1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trangthai"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Trạng thái"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <!-- Nút Lưu và Hiển thị -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink2"
+                android:padding="12dp"
+                android:text="Lưu"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink2"
+                android:padding="12dp"
+                android:text="Hiển thị"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

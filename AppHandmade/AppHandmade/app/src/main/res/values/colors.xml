@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#FF0000</color>
+    <color name="sotien">#E91717</color>
+    <color name="pink">#FB6F92</color>
+    <color name="green">#E0E0E0</color>
+    <color name="pink1">#EFE9E9</color>
+    <color name="yellow1">#DFD0B8</color>
+    <color name="pink2">#E04574</color>
+    <color name="yellow3">#F8FAE5</color>
+    <color name="pink3">#EFB0C3</color>
+    <color name="orange">#FFCC80</color>
+    <color name="orange2">#B15011</color>
+    <color name="orangedark">#DC5901</color>
+    <color name="gray">#757270</color>
+    <color name="nau">#B44427</color>
+    <color name="orange3">#8f3d06</color>
+    <color name="yellow">#EFE9E9</color>
+    <color name="brown">#997C4E</color>
+    <color name="skin">#F8FAE5</color>
+</resources>

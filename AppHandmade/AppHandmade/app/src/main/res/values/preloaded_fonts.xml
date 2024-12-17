@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/baloo_da</item>
+        <item>@font/marko_one</item>
+        <item>@font/martian_mono</item>
+        <item>@font/martian_mono_medium</item>
+    </array>
+</resources>

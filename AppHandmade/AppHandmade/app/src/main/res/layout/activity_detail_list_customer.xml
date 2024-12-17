@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.home.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layoutOn11"
+            tools:ignore="MissingConstraints">
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imageforhomeheader"
+                android:contentDescription="TODO"
+                tools:ignore="HardcodedText">
+
+                <ImageButton
+                    android:id="@+id/igmbuttonMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@android:color/transparent"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    android:src="@drawable/quaylai"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="95dp"
+                    android:background="@drawable/border_tieude"
+                    android:padding="7dp"
+                    android:text="Danh sách người mua "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+            </Toolbar>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardElevation="5dp"
+            android:translationZ="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/layoutOn11">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@color/yellow"
+                app:layout_constraintTop_toTopOf="@+id/cardView"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingPrefix">
+
+                <!-- Avatar của người mua -->
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/cat"
+                    tools:ignore="ImageContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Tên người mua -->
+                    <TextView
+                        android:id="@+id/tvBuyerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên người mua"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Tên món hàng -->
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Tên món hàng"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Nút liên hệ người mua -->
+                <Button
+                    android:id="@+id/btnContactBuyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="@color/orange"
+                    android:contentDescription="TODO"
+                    android:importantForAccessibility="no"
+                    android:text="Liên hệ "
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="177dp"
+            android:layout_height="209dp"
+            app:srcCompat="@drawable/adopt"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="711dp"
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            android:layout_marginVertical="280dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infor_order_layout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/yellow1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/imageforhomeheader">
+
+            <!-- Nút Quay lại -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/quaylai"
+                android:contentDescription="Back Button" />
+
+            <!-- Tiêu đề Đăng bán -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Thông tin đơn hàng"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/pink1"
+            android:padding="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btnuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:contentDescription="Back Button"
+                android:src="@drawable/vitri" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:text="Tên người dùng"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Địa chỉ người dùng:......"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="30dp"
+            android:background="@color/pink1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:padding="16dp"
+                    android:src="@drawable/img_1" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+                    <ImageView
+                        android:id="@+id/btngia_3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="Price Icon"
+                        android:src="@drawable/gia" />
+                    <TextView
+                        android:id="@+id/rb_gia_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="  Giá hàng"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    android:text="  Tên người dùng"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="      Mô tả hàng"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/pink1"
+            android:padding="40dp"
+            android:orientation="vertical">
+
+            <!-- First LinearLayout -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/rb_vi_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:text="Trạng thái đơn hàng"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/rb_vi_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Thông tin trạng thái"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+            <!-- Second LinearLayout containing two vertical layouts -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/pink1"
+                android:orientation="horizontal">
+
+                <!-- First inner vertical LinearLayout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rb_xn_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:text="  Chờ xác nhận"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/btnxn_3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="30dp"
+                        android:contentDescription="Price Icon"
+                        />
+                </LinearLayout>
+
+                <!-- Second inner vertical LinearLayout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rb_xn_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:text="  Chờ xác nhận"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/btnxn_4"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="140dp"
+                        android:contentDescription="Price Icon"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:background="@color/pink1"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_gravity="bottom" >
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nut_hong"
+                android:layout_gravity="center|bottom"
+                android:text="Hủy đơn"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

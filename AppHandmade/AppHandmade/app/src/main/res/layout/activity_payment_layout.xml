@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow1"
+    tools:context=".payment_layout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/yellow1">
+
+        <!-- Thanh tiêu đề (AppBar) -->
+        <include
+            layout="@layout/headerlayout"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/green"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnvi"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Back Button"
+                android:background="@android:color/transparent"
+                android:src="@drawable/vitri"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_tennguoidung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Tên người dùng( SDT người dùng):"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+                <TextView
+                    android:id="@+id/text_điachi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Địa chỉ giao hàng........... "
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/pink1"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!-- First LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/pink1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnvi_1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="Back Button"
+                    android:src="@drawable/vitri"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/rb_vi_5"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="Tên người bán"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rb_vi_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="  Ngày tạo......."
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Second LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:background="@color/white"
+                    android:contentDescription="Product Image"
+                    android:padding="16dp"
+                    android:src="@drawable/img_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textStyle="bold"
+                        android:text="  Tên người dùng"
+                        android:textSize="14sp"
+                        tools:ignore="DuplicateIds" />
+                    <TextView
+                        android:id="@+id/tv_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:text="      Mô tả hàng"
+                        android:textSize="14sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Third LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnvi_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Price Icon"
+                    android:src="@drawable/gia" />
+
+                <TextView
+                    android:id="@+id/rb_vi_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Giá hàng"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_margin="8dp"
+                    android:background="#8B5A2B" />
+
+                <!-- Quantity Text -->
+                <TextView
+                    android:id="@+id/text_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:text="Số lượng"
+                    android:layout_gravity="center"
+                    android:textColor="#8B5A2B"
+                    android:textSize="16dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="text"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:labelFor="@+id/text_quantity"
+                    android:id="@+id/inputquanlity"
+                    android:hint="Nhập số lượng"
+                    >
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:background="@color/pink1">
+            <TextView
+                android:id="@+id/tv_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Phương thức thanh toán"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_cod"
+                    android:layout_width="381dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh toán khi nhận hàng" />
+
+                <RadioButton
+                    android:id="@+id/rb_online"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh toán trực tuyến" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_policy_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Chính sách đổi trả\n\n• Thời gian đổi trả: Trong vòng 7 ngày kể từ ngày mua hàng.\n• Điều kiện: Sản phẩm còn nguyên trạng.\n• Hình thức: Mang theo hóa đơn mua hàng.\n• Trường hợp đặc biệt: Sẽ được đổi hoặc hoàn tiền.\n• Hạn chế: Một số sản phẩm đặc biệt không được đổi trả.\nKhách hàng cần liên hệ trực tiếp với cửa hàng để biết thêm chi tiết."
+            android:textSize="14sp"
+            android:background="@color/pink1"/>
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/pink2"
+            android:text="Đặt hàng"
+            android:textColor="#FFFF" />
+    </LinearLayout>
+</ScrollView>
+
